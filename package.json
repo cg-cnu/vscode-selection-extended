@@ -1,7 +1,7 @@
 {
     "name": "vscode-selection-extended",
     "displayName": "vscode selection extended",
-    "description": "Additional selection options like select inverse, select till end of file, select till start of file and more...",
+    "description": "select inverse, select till end of file and select till start of file",
     "version": "0.0.1",
     "publisher": "cg-cnu",
     "engines": {
@@ -16,7 +16,27 @@
         "url": "https://twitter.com/cgcnu"
     },
     "bugs": {
-        "email": "sreenivas9alapati@gmail.com"
+        "email": "sreenivas9alapati@gmail.com",
+        "url": "https://github.com/cg-cnu/vscode-selection-extended/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cg-cnu/vscode-selection-extended"
+    },
+    "readme": "README.md",
+    "license": "MIT",
+    "keywords": [
+        "code",
+        "selection",
+        "inverse",
+        "keybindings",
+        "shortcuts"
+    ],
+    "homepage": "https://github.com/cg-cnu/vscode-selection-extended",
+    "icon": "icons/selection-extended-128.png",
+    "galleryBanner": {
+        "color": "#A3BFE1",
+        "theme": "dark"
     },
     "activationEvents": [
         "onCommand:selection.tillSOF",
@@ -25,8 +45,7 @@
     ],
     "main": "./out/src/selection",
     "contributes": {
-        "commands": [
-            {
+        "commands": [{
                 "command": "selection.tillSOF",
                 "title": "select: Till Start of file"
             },
@@ -38,8 +57,25 @@
                 "command": "selection.inverse",
                 "title": "select: Inverse"
             }
-
-        ]
+        ],
+        "keybindings": [{
+            "command": "selection.tillSOF",
+            "key": "ctrl+shift+up",
+            "mac": "cmd+shift+up",
+            "when": "editorTextFocus"
+        },
+        {
+            "command": "selection.tillEOF",
+            "key": "ctrl+shift+down",
+            "mac": "cmd+shift+down",
+            "when": "editorTextFocus"
+        },
+        {
+            "command": "selection.inverse",
+            "key": "ctrl+shift+i",
+            "mac": "cmd+shift+i",
+            "when": "editorTextFocus"
+        }]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
