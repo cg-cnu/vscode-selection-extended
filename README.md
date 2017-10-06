@@ -10,9 +10,9 @@
 
 ## Features:
 
-* Select inverse.
-* Select till end of file.
-* Select till start of file.
+* Select inverse with ctrl+shift+i
+* Select till end of file with ctrl+shift+down
+* Select till start of file with ctrl+shift+up
 * More soon...
 
 ### Issue/Feedback:
