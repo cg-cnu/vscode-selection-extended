@@ -2,7 +2,7 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-
+    // select till start of file
     let tillSOF = vscode.commands.registerCommand('selection.tillSOF', () => {
         const editor: vscode.TextEditor = vscode.window.activeTextEditor;
 
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
         )
     });
     context.subscriptions.push(tillSOF);
-
+    // select till end of file
     let tillEOF = vscode.commands.registerCommand('selection.tillEOF', () => {
         const editor: vscode.TextEditor = vscode.window.activeTextEditor;
         if (!editor) {
@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
         )
     });
     context.subscriptions.push(tillEOF);
-
+    // select inverse 
     let inverse = vscode.commands.registerCommand('selection.inverse', () => {
         const editor: vscode.TextEditor = vscode.window.activeTextEditor;
         if (!editor) {

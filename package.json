@@ -1,8 +1,8 @@
 {
     "name": "vscode-selection-extended",
-    "displayName": "vscode selection extended",
+    "displayName": "selection extended",
     "description": "select inverse, select till end of file and select till start of file",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "cg-cnu",
     "engines": {
         "vscode": "^1.16.0"

@@ -13,11 +13,10 @@
 * Select inverse with ctrl+shift+i
 * Select till end of file with ctrl+shift+down
 * Select till start of file with ctrl+shift+up
-* More soon...
 
 ### Issue/Feedback:
 
-log them in the [github issues](https://github.com/cg-cnu/vscode-codetags/issues) or hit me on [twitter](https://twitter.com/CgCnu).
+log them in the [github issues](https://github.com/cg-cnu/vscode-selection-extended/issues) or hit me on [twitter](https://twitter.com/CgCnu).
 
 ### Like it?:
 
