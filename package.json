@@ -45,7 +45,8 @@
     ],
     "main": "./out/src/selection",
     "contributes": {
-        "commands": [{
+        "commands": [
+            {
                 "command": "selection.tillSOF",
                 "title": "select: Till Start of file"
             },
@@ -58,24 +59,26 @@
                 "title": "select: Inverse"
             }
         ],
-        "keybindings": [{
-            "command": "selection.tillSOF",
-            "key": "ctrl+shift+up",
-            "mac": "cmd+shift+up",
-            "when": "editorTextFocus"
-        },
-        {
-            "command": "selection.tillEOF",
-            "key": "ctrl+shift+down",
-            "mac": "cmd+shift+down",
-            "when": "editorTextFocus"
-        },
-        {
-            "command": "selection.inverse",
-            "key": "ctrl+shift+i",
-            "mac": "cmd+shift+i",
-            "when": "editorTextFocus"
-        }]
+        "keybindings": [
+            {
+                "command": "selection.tillSOF",
+                "key": "ctrl+shift+up",
+                "mac": "cmd+shift+up",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "selection.tillEOF",
+                "key": "ctrl+shift+down",
+                "mac": "cmd+shift+down",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "selection.inverse",
+                "key": "ctrl+shift+i",
+                "mac": "cmd+shift+i",
+                "when": "editorTextFocus"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -85,10 +88,10 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.5.2",
-        "vscode": "^1.1.5",
+        "@types/mocha": "^2.2.48",
+        "@types/node": "^7.10.10",
         "mocha": "^3.5.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.9.2",
+        "vscode": "^1.1.37"
     }
 }
