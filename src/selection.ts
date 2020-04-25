@@ -9,13 +9,21 @@ export function activate(context: vscode.ExtensionContext) {
       vscode.window.showErrorMessage("No file open");
       return;
     }
-    editor.selections = [
-      new vscode.Selection(new vscode.Position(0, 0), editor.selection.start),
+    let selections: Array<vscode.Selection> = [];
+    let selectionStart: vscode.Position = new vscode.Position(0, 0);
+
+    editor.selections.forEach((selection) => {
+      selections.push(new vscode.Selection(selectionStart, selection.start));
+      selectionStart = selection.end;
+    });
+
+    selections.push(
       new vscode.Selection(
-        editor.selection.end,
+        selectionStart,
         editor.document.lineAt(editor.document.lineCount - 1).range.end
-      ),
-    ];
+      )
+    );
+    editor.selections = selections;
   });
   context.subscriptions.push(inverse);
 }
