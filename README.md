@@ -6,13 +6,14 @@
 </p>
 
 ## Demo:
+
 <img src="https://user-images.githubusercontent.com/2767425/31283604-b0e04e36-aad3-11e7-8231-4ef927ffbe81.gif"/>
 
 ## Features:
 
-* Select inverse with ctrl+shift+i
-* Select till end of file with ctrl+shift+down
-* Select till start of file with ctrl+shift+up
+- Select inverse with ctrl+shift+i
+- Select till end of file with ctrl+shift+down
+- Select till start of file with ctrl+shift+up
 
 ### Issue/Feedback:
 
