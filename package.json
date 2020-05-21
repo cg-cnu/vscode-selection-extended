@@ -2,7 +2,7 @@
     "name": "vscode-selection-extended",
     "displayName": "selection extended",
     "description": "select inverse",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "publisher": "cg-cnu",
     "engines": {
         "vscode": "^1.16.0"
@@ -48,7 +48,7 @@
         "commands": [
             {
                 "command": "selection.inverse",
-                "title": "select: Inverse"
+                "title": "Select Inverse"
             }
         ],
         "keybindings": [
